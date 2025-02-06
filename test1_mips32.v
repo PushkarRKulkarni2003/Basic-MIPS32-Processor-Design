@@ -19,8 +19,8 @@ initial
     begin
     for (k=0; k<31; k=k+1)
         mips.Reg[k] = k;
-        mips.Mem[0] = 32'h2801000a; // ADDI R1,R0,10
-        mips.Mem[1] = 32'h28020014; // ADDI R2,R0,20
+        mips.Mem[0] = 32'h2801000a; // ADDI R1,R0,10...........001010 00000 00001 00000 00000 001010
+        mips.Mem[1] = 32'h28020014; // ADDI R2,R0,20...........001010 00000 00010 00000 00000 010100
         mips.Mem[2] = 32'h28030019; // ADDI R3,R0,25
         mips.Mem[3] = 32'h0ce77800; // OR R7,R7,R7 -- dummy instr.
         mips.Mem[4] = 32'h0ce77800; // OR R7,R7,R7 -- dummy instr.
